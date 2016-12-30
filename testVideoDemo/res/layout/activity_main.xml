@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".VideoActivity" >
+
+   
+	<Button
+        android:id="@+id/settingwifi_btn"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置WIFI"
+	    />
+	
+	 <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingwifi_btn"
+        android:orientation="horizontal"
+        >
+        
+        <EditText
+            android:id="@+id/data_et"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/senddata_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="透传数据" />
+	     
+	 </LinearLayout>
+        
+     	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/surfaceView_video"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/up_btn"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="上" />
+
+        <Button
+            android:id="@+id/down_btn"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="下" />
+
+        <Button
+            android:id="@+id/left_btn"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="左" />
+
+        <Button
+            android:id="@+id/right_btn"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="右" />
+
+        <Button
+            android:id="@+id/stop_btn"
+            android:layout_width="50dip"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="停" />
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/surfaceView_video"
+        android:layout_width="400dip"
+        android:layout_height="250dip"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surfaceView_video"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/say_btn"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="开始对讲" />
+
+        <Button
+            android:id="@+id/listen_btn"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="开始收听" />
+
+        <Button
+            android:id="@+id/capture_btn"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="开始录像" />
+    </LinearLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="录像文件位置 ：/videoDemo/test.avi"
+        android:layout_marginBottom="30dip"
+        />
+
+</RelativeLayout>

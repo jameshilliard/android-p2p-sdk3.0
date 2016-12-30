@@ -1,0 +1,27 @@
+# view AndroidManifest.xml #generated:32
+-keep class com.example.testvideo.LanDevListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class com.example.testvideo.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class com.example.testvideo.StartActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.example.testvideo.VideoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.example.testvideo.ViewOfSettingWifi { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.example.testvideo.WanDevListActivity { <init>(...); }
+
+# onClick res/layout/function_setting_wifi.xml #generated:25
+-keepclassmembers class * { *** SearchWifi(...); }
+
+# onClick res/layout/function_setting_wifi.xml #generated:18
+-keepclassmembers class * { *** getWifiMac(...); }
+
+# onClick res/layout/function_setting_wifi.xml #generated:43
+-keepclassmembers class * { *** setWifiSwitch(...); }
+
